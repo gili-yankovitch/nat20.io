@@ -238,8 +238,11 @@ body, html,
 body
 {
     background-image: url("/img/background-castle.jpg");
-    -background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -background-size: cover;
+
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
