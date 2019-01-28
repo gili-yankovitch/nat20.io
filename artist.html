@@ -2,8 +2,8 @@
 <html class="no-js">
 <head>
 	<meta charset="utf-8">
-	<title>NAT20.io :: The Artist</title>
-	<meta name="description" content="nat20.io : Open Source Dungeons and Dragons Homebrew Adventures">
+	<title>NAT20 :: The Artist</title>
+	<meta name="description" content="nat20.io :: Home to homebrew Dungeons and Dragons content">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui,maximum-scale=2">
@@ -18,10 +18,18 @@
 	<link rel="shortcut icon" href="img/d20.png">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileImage" content="img/d20.png">
 	<meta name="msapplication-TileColor" content="#222222">
-	<link rel="canonical" href="http://nat20.io/" >
+
+	<!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+	<!--
+	<link rel="canonical" href="http://www.example.com/" >
+	-->
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<!--
 	<meta name="mobile-web-app-capable" content="yes">
+	-->
 
 	<!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
 	<!--
@@ -34,7 +42,9 @@
 	<!--
 	<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
 	-->
+
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="./wow_book/wow_book.css" type="text/css" />
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -58,9 +68,9 @@
 		$(function(){
 			var bookOptions = {
 				// height   : 500
-				// ,width    : 800
+				//,width    : 800
 				// ,maxWidth : 800
-				// ,maxHeight : 600
+				//,maxHeight : 600
 
 				centeredWhenClosed : true
 				,hardcovers : true
@@ -75,6 +85,13 @@
 
 				// The pdf and your webpage must be on the same domain
 				,pdf: "adventures/The Artist.pdf"
+
+				// Uncomment the option toc to create a Table of Contents
+				// ,toc: [                    // table of contents in the format
+				// 	[ "Introduction", 2 ],  // [ "title", page number ]
+				// 	[ "First chapter", 5 ],
+				// 	[ "Go to codecanyon.net", "http://codecanyon.net" ] // or [ "title", "url" ]
+				// ]
 			};
 
 			$('#book').wowBook( bookOptions ); // create the book
