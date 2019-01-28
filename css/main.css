@@ -221,7 +221,9 @@ body, html {
 
 body, html,
 .wowbook-container {
-    background: #e5e5e5;
+    -background: #e5e5e5;
+    background: #2c3e50;
+    color: #fff;
 }
 
 /* hide book to avoid flash of unstyled content */
