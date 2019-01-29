@@ -27,10 +27,6 @@ a {
     color: #00e;
 }
 
-a:visited {
-    color: #551a8b;
-}
-
 a:hover {
     color: #06e;
 }
@@ -245,4 +241,5 @@ body
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
